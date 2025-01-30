@@ -8,15 +8,29 @@
         body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
         h1 { color: #2c3e50; }
         img { width: 60%; max-width: 600px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+        form { max-width: 400px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #2c3e50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #1a252f; }
     </style>
 </head>
 <body>
     <h1>Welcome to Portland Zen Massage</h1>
     <p>Relax, Rejuvenate, and Heal with Expert Massage Therapy</p>
 
-    <!-- Add Image Here -->
     <img src="massage_clinic.jpg" alt="Relaxing Massage Therapy">
 
-    <p>Visit us at: <a href="mailto:contact@portlandzen.com">contact@portlandzen.com</a></p>
+    <h2>Contact Us</h2>
+    <p>Have questions? Send us a message and we'll get back to you!</p>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p>Or email us directly: <a href="mailto:contact@portlandzen.com">contact@portlandzen.com</a></p>
 </body>
 </html>
